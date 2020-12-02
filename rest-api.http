@@ -1,0 +1,18 @@
+POST http://localhost:8080/ql/redis/setStringValue
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh_CN
+Connection: keep-alive
+Content-Type: application/json
+
+{"key":"test", "value": "sassss"}
+
+###
+POST http://localhost:8080/ql/redis/getValue
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh_CN
+Connection: keep-alive
+Content-Type: application/json
+
+{"key":"test"}
