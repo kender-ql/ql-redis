@@ -1,1 +1,14 @@
+spring:
+  redis:
+    host: 123.57.46.169
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8 #最大连接数
+
+
+
+
+
 
