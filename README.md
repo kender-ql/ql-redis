@@ -1,2 +1,3 @@
 # ql-redis
-集成redis，mybatis，jpa，和h2
+1. 集成redis
+2. (mysql)mybatis，jpa，和h2

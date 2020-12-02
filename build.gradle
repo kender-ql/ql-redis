@@ -30,7 +30,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    compile 'redis.clients:jedis:3.3.0'
+    compile 'org.springframework.boot:spring-boot-starter-data-redis'
 }
 
 test {
