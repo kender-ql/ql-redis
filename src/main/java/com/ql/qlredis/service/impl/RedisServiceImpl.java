@@ -34,7 +34,7 @@ public class RedisServiceImpl implements RedisService {
             Map<String, Object> value =  (Map<String, Object>)param.get("value");
             ValueOperations<String, Object> vo = redisTemplate.opsForValue();
             vo.set(key, value);
-            redisTemplate.expire(key, 1, TimeUnit.HOURS); // 这里指的是1小时后失效
+//            redisTemplate.expire(key, 1, TimeUnit.HOURS); // 这里指的是1小时后失效
             return true;
         } catch (Exception e) {
             logger.error(e.getMessage());
@@ -50,7 +50,7 @@ public class RedisServiceImpl implements RedisService {
             Object value =  param.get("value");
             ValueOperations<String, Object> vo = redisTemplate.opsForValue();
             vo.set(key, value);
-            redisTemplate.expire(key, 1, TimeUnit.HOURS); // 这里指的是1小时后失效
+//            redisTemplate.expire(key, 1, TimeUnit.HOURS); // 这里指的是1小时后失效
             return true;
         } catch (Exception e) {
             logger.error(e.getMessage());
