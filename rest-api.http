@@ -1,4 +1,4 @@
-POST http://localhost:8080/ql/redis/setStringValue
+POST http://localhost:8080/ql/redis/setObjectValue
 Accept: application/json, text/plain, */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: zh_CN
