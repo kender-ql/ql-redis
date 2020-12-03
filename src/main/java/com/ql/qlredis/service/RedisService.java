@@ -1,5 +1,7 @@
 package com.ql.qlredis.service;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.Map;
 
 /**
@@ -10,18 +12,15 @@ import java.util.Map;
  */
 public interface RedisService {
     // 加入元素
-    Boolean setValue(String key, Map<String, Object> value);
+    Boolean setMapValue(JSONObject param);
 
     // 加入元素
-    Boolean setValue(Map<String, Object> param);
-
-    // 加入元素
-    Boolean setValue(String key, Object value);
+    Boolean setValue(JSONObject param);
 
     // 获取元素
-    Object getMapValue(String key);
+    Object getMapValue(JSONObject param);
 
     // 获取元素
-    Object getValue(Map<String, Object> param);
+    Object getValue(JSONObject param);
 
 }
