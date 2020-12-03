@@ -40,3 +40,6 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+//不添加这个配置，sample无法正常引用
+jar.enabled=true
