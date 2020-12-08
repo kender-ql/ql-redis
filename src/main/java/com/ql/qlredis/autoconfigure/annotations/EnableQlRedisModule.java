@@ -15,5 +15,5 @@ import java.lang.annotation.*;
 @Target(value = ElementType.TYPE)
 @Documented
 @Import({QlRedisConfiguration.class})
-public @interface EnableQlRedis {
+public @interface EnableQlRedisModule {
 }
