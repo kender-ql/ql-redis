@@ -41,5 +41,14 @@ test {
     useJUnitPlatform()
 }
 
-//不添加这个配置，sample无法正常引用
-jar.enabled=true
+jar{
+    //不添加这个配置，sample无法正常引用
+    enabled=true
+    manifest{
+        attributes 'Manifest-Version': 1.0
+        attributes 'Implementation-Vendor': 'QL Corporation'
+        attributes 'Implementation-Title': 'Ql Redis Runtime Environment'
+        attributes 'Implementation-Version': "$version"
+        attributes 'Java-Version': '1.8.0_251'
+    }
+}
